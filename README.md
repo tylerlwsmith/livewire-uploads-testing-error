@@ -4,6 +4,7 @@ When using `Livewire::test()`, modifying an array that contains an upload will t
 
 Here is the test:
 ```php
+    /** @test */
     public function it_can_delete_an_upload()
     {
         $image_1 = UploadedFile::fake()->image('avatar.jpg');
