@@ -24,11 +24,9 @@ class UploadsForm extends Component
     public function deleteUpload($index)
     {
         $this->uploads = collect($this->uploads)
-            ->filter(
-                function ($_value, $key) use ($index) {
+            ->filter(function ($_value, $key) use ($index) {
                     return $index != $key;
-                }
-            )
+            })
             ->values() // Rekey array to prevent errors.
             ->toArray();
     }
