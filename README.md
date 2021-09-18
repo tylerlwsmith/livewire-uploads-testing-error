@@ -29,8 +29,7 @@ And here is the code for the `deleteUpload` method it is calling:
     }
 ```
 
-I think this is related to issues [#1222](https://github.com/livewire/livewire/issues/1222) and [#2353](https://github.com/livewire/livewire/issues/2353). 
-Josué Artaud suggested that this issue may be caused by the `Illuminate\Http\UploadedFile` class not being serializable to JSON.
+I think this is related to issues [#1222](https://github.com/livewire/livewire/issues/1222) and [#2353](https://github.com/livewire/livewire/issues/2353). Josué Artaud suggested that this issue may be caused by the `Illuminate\Http\UploadedFile` class not being serializable to JSON.
 
 To reproduce the issue, clone the repo, run `composer install`, then run `php artisan test`.
 
